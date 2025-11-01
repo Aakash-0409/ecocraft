@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoCraft — ReSource</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden><path d="M12 2L15 8H9L12 2Z"></path></svg>
+        <div>
+          <h1>EcoCraft</h1>
+          <div class="tag">by ReSource</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#materials">Materials</a>
+        <a href="#products">Products</a>
+        <a href="#custom">Custom Order</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Turning Waste into Wonders</h2>
+        <p>Discover unique products made from recycled materials. Join ReSource in reducing waste and creating meaningful goods.</p>
+      </div>
+    </section>
+
+    <section id="materials" class="container section">
+      <h3>Available Materials</h3>
+      <div class="grid materials">
+        <div class="card">
+          <div class="icon">PET</div>
+          <h4>Plastic</h4>
+          <p>Plastic bottles, HDPE, PET scraps</p>
+        </div>
+        <div class="card">
+          <div class="icon">P</div>
+          <h4>Paper</h4>
+          <p>Scrap paper, cardboard, newspapers</p>
+        </div>
+        <div class="card">
+          <div class="icon">C</div>
+          <h4>Coconut Shell</h4>
+          <p>Hard shells for lamps & bowls</p>
+        </div>
+        <div class="card">
+          <div class="icon">Fe</div>
+          <h4>Iron Scrap</h4>
+          <p>Small metal pieces and scrap</p>
+        </div>
+        <div class="card">
+          <div class="icon">G</div>
+          <h4>Glass</h4>
+          <p>Bottles and glass pieces</p>
+        </div>
+        <div class="card">
+          <div class="icon">W</div>
+          <h4>Wood</h4>
+          <p>Off-cuts and small timber</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="container section">
+      <h3>Products</h3>
+      <div class="grid products" id="productsList">
+        <!-- Product cards inserted by script -->
+      </div>
+    </section>
+
+    <section id="custom" class="container section form-section">
+      <h3>Custom Order</h3>
+      <p>Select material, choose product and tell us any customization. Your order will be saved locally (demo).</p>
+      <form id="orderForm">
+        <label>Full name<input type="text" id="custName" required></label>
+        <label>Phone<input type="tel" id="custPhone"></label>
+        <label>Email<input type="email" id="custEmail"></label>
+        <label>Material
+          <select id="custMaterial" required>
+            <option value="">Select material</option>
+          </select>
+        </label>
+        <label>Product
+          <select id="custProduct" required>
+            <option value="">Select product</option>
+          </select>
+        </label>
+        <label>Quantity<input type="number" id="custQty" min="1" value="1"></label>
+        <label>Customization notes
+          <textarea id="custNotes" rows="3" placeholder="Example: color, size or finish"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="button" id="saveOrder">Save Order (Demo)</button>
+          <button type="button" id="mailto">Contact via Email</button>
+        </div>
+        <div id="orderMsg" class="message"></div>
+      </form>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>About ReSource</h3>
+      <p>ReSource is a community-driven project that transforms locally collected waste into functional, beautiful products. We focus on sustainable craftsmanship and empowering small producers.</p>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:resource.ecocraft@gmail.com">resource.ecocraft@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p>Or send a quick message (opens your email app):</p>
+      <p><button id="contactMail">Send Email</button></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <strong>EcoCraft</strong> by ReSource — Turning waste into wonders</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
